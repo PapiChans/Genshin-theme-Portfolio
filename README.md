@@ -6,7 +6,7 @@
 | ------------------- | --------------------|
 | **Description**     | A Personal Porfolio with a UI theme that based on the game Genshin Impact. |
 | **Project Duration**    | March 4, 2026 - (In Progress) |
-| **Current Version** | v0.0.1 | 
+| **Current Version** | v0.0.2 | 
 
 
 ## Technologies Used for this Application
@@ -31,6 +31,6 @@ This project is created for **educational and practice purposes only**.
 
 All game-related logos, characters, and images used are the property of their respective copyright holders. 
 
-This project is **not intended for commercial use** or profit. It is a **non-commercial**, **portfolio** project aimed at improving React and front-end development skills.
+This project is **not intended for commercial use** or profit. It is a **non-commercial**, **portfolio** project aimed at improving my personal React and front-end development skills.
 
 Feel free to view and explore the code for learning purposes.

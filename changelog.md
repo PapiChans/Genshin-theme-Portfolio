@@ -1,5 +1,9 @@
 # Changelog
 
+**v0.0.2 - March 6, 2026**
+- Initialize the Font
+- Remove unused files
+
 **v0.0.1 - March 4, 2026**
 - Project Creation
 - Font Imported
