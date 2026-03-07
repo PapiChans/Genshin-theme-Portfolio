@@ -1,5 +1,8 @@
 # Changelog
 
+**v0.0.3 - March 7, 2026**
+- Created Internet Loader
+
 **v0.0.2 - March 6, 2026**
 - Initialize the Font
 - Remove unused files

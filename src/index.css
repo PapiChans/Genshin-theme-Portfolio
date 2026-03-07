@@ -2,3 +2,53 @@
     font-family: genshin;
     src: url(/src/assets/fonts/genshin.ttf);
 }
+
+* {
+    font-family: genshin;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Internet Loader */
+.internet-loader-background {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(56, 56, 56, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.internet-loader-box {
+    height: 120px;
+    width: 120px;
+    max-height: 120px;
+    max-width: 120px;
+    background-color: rgba(37, 37, 37, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.internet-loader-spinner {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+} 
