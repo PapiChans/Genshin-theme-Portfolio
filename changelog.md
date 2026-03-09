@@ -1,5 +1,9 @@
 # Changelog
 
+**v0.0.4 - March 9, 2026**
+- Created Game Loader with Dynamic theme
+- Adjust Internet Loader
+
 **v0.0.3 - March 7, 2026**
 - Created Internet Loader
 

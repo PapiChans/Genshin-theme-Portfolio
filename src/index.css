@@ -3,6 +3,18 @@
     src: url(/src/assets/fonts/genshin.ttf);
 }
 
+:root {
+    /* Loading Screen: Light Theme */
+    --loading-light-background-color: #fefeff;
+    --loading-light-color: #8699a7;
+    --loading-light-line-color: #e5e7eb;
+
+    /* Loading Screen: Dark Theme */
+    --loading-dark-background-color: #1d1c21;
+    --loading-dark-color: #dacea2;
+    --loading-dark-line-color: #3b3b3f;
+}
+
 * {
     font-family: genshin;
     margin: 0;
@@ -15,10 +27,12 @@
 .internet-loader-background {
     width: 100%;
     height: 100vh;
-    background-color: rgb(56, 56, 56, 0.3);
+    background-color: rgb(56, 56, 56, 0.6);
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    z-index: 999;
 }
 
 .internet-loader-box {
@@ -51,4 +65,128 @@
     100% {
         transform: rotate(360deg);
     }
-} 
+}
+
+/* Game Loader */
+
+.game-loader-background {
+    width: 100%;
+    height: 100vh;
+    display: block;
+    padding-top: 10rem;
+}
+
+.game-loader-background.light {
+    background-color: var(--loading-light-background-color);
+}
+
+.game-loader-background.dark {
+    background-color: var(--loading-dark-background-color);
+}
+
+.game-loader-icon-placement {
+    width: 100%;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-loader-icon {
+    height: 130px;
+}
+
+.game-loader-icon.light {
+    filter: brightness(0.5);
+}
+
+.game-loader-icon.dark {
+    filter: brightness(0) saturate(100%) invert(79%) sepia(21%) saturate(462%) hue-rotate(354deg) brightness(93%) contrast(90%);
+}
+
+.game-loader-text-placement {
+    width: 100%;
+    height: 90px;
+    max-height: 130px;
+    margin-top: 7rem;
+    padding: 1rem;
+}
+
+.game-loader-title {
+    font-size: 18px;
+    text-align: center;
+}
+
+.game-loader-title.light {
+    color: var(--loading-light-color);
+}
+
+.game-loader-title.dark {
+    color: var(--loading-dark-color);
+}
+
+.game-loader-text {
+    margin: 0.75rem auto 0;
+    text-align: center;
+    font-size: 12px;
+    max-width: 600px;
+    line-height: 1.2rem;
+}
+
+.game-loader-text.light {
+    color: var(--loading-light-color);
+}
+
+.game-loader-text.dark {
+    color: var(--loading-dark-color);
+}
+
+.game-loader-loading-placement {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-loader-loading-line {
+    width: 100%;
+    height: 2px;
+}
+
+.game-loader-loading-line.light {
+    background-color: var(--loading-light-line-color);
+}
+
+.game-loader-loading-line.dark {
+    background-color: var(--loading-dark-line-color);
+}
+
+.game-loader-loading-area {
+  position: relative;
+  width: 700px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.game-loader-loading-area::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0%;
+  background: aqua;
+  animation: loadingBar 4s linear forwards;
+}
+
+@keyframes loadingBar {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
