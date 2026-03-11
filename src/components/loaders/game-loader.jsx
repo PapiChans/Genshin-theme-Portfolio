@@ -1,22 +1,20 @@
 import whiteAnemo from '../../assets/images/elements/white/anemo_white.png'
+import { useLoadingText } from '../../hooks/game-loader-change-text';
+import { getThemebyTime } from '../../hooks/get-theme-by-time';
 
 const GameLoader = () => {
-
-  const hour = new Date().getHours();
-
-  // The Light theme is between 6 AM to 5 PM
-  const theme = 
-    hour >= 6 && hour < 18 ? "light" : "dark";
+  const { title, text, changeLoadingText } = useLoadingText();
+  const { theme } = getThemebyTime();
 
   return (
     <>
-    <div className={`game-loader-background ${theme}`}>
+    <div className={`game-loader-background ${theme}`} onClick={changeLoadingText}>
       <div className="game-loader-icon-placement">
         <img className={`game-loader-icon ${theme}`} src={whiteAnemo} alt="Element Logo" />
       </div>
       <div className="game-loader-text-placement">
-        <p className={`game-loader-title ${theme}`}>Paimon</p>
-        <p className={`game-loader-text ${theme}`}>The best travel companion ever.</p>
+        <p className={`game-loader-title ${theme}`}>{title}</p>
+        <p className={`game-loader-text ${theme}`}>{text}</p>
       </div>
       <div className="game-loader-loading-placement">
         <span className={`game-loader-loading-line ${theme}`}></span>

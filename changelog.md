@@ -1,5 +1,9 @@
 # Changelog
 
+**v0.0.6 - March 11, 2026**
+- Add Dynamic Text to the Game Loader
+- Organized File and Folders
+
 **v0.0.5 - March 11, 2026**
 - **Convert the Entire Project into React + Vite**
 
