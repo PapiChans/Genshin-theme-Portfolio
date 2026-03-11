@@ -1,4 +1,4 @@
-const Internetloader = () => {
+const InternetLoader = () => {
   return (
     <>
       <div className="internet-loader-background">
@@ -10,4 +10,4 @@ const Internetloader = () => {
   )
 }
 
-export default Internetloader
+export default InternetLoader

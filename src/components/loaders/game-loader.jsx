@@ -1,6 +1,6 @@
 import whiteAnemo from '../../assets/images/elements/white/anemo_white.png'
 
-const gameLoader = () => {
+const GameLoader = () => {
 
   const hour = new Date().getHours();
 
@@ -30,4 +30,4 @@ const gameLoader = () => {
   )
 }
 
-export default gameLoader
+export default GameLoader;

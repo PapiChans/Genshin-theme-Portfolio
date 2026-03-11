@@ -1,5 +1,8 @@
 # Changelog
 
+**v0.0.5 - March 11, 2026**
+- **Convert the Entire Project into React + Vite**
+
 **v0.0.4 - March 9, 2026**
 - Created Game Loader with Dynamic theme
 - Adjust Internet Loader
