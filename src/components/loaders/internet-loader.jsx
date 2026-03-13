@@ -1,3 +1,5 @@
+import '../../assets/css/internet-loader.css'
+
 const InternetLoader = () => {
   return (
     <>

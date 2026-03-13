@@ -1,4 +1,4 @@
-# Genshin Theme Portfolio - React.JS
+# Genshin Theme Portfolio - React.JS + Vite
 
 ## Project Details
 
@@ -6,7 +6,7 @@
 | ------------------- | --------------------|
 | **Description**     | A Personal Porfolio with a UI theme that based on the game Genshin Impact. |
 | **Project Duration**    | March 4, 2026 - (In Progress) |
-| **Current Version** | v0.0.6 | 
+| **Current Version** | v0.0.7 | 
 
 
 ## Technologies Used for this Application
@@ -21,6 +21,8 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo"  />
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" height="40" alt="react" />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg" height="40" alt="vitejs"/>
 </div>
 
 ---

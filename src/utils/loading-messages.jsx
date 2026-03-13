@@ -33,15 +33,15 @@ export const loadingMessages = [
     },
     {
         title: "Some tips.",
-        text: "Don't use your Primogems to get Acquaint Fate, spend on Interwined Fate instead.",
+        text: "Don't use your Primogems to get Acquaint Fate, spend it for Interwined Fate instead.",
     },
     {
         title: "Some tips.",
-        text: "Collect EVERYTHING you can get when moving around.",
+        text: "Collect EVERYTHING you can get when exploring around.",
     },
     {
         title: "Barbara?",
-        text: "La~ lalala~ la~ lalala~ la~Kira!",
+        text: "La~ Lalala~ La~ Lalala~ La~ Kira~!",
     },
     {
         title: "Klee!?",
@@ -49,7 +49,7 @@ export const loadingMessages = [
     },
     {
         title: "Klee!?",
-        text: "Ta! Tata!",
+        text: "Tat! Tata!",
     },
     {
         title: "Klee!?",
@@ -58,5 +58,37 @@ export const loadingMessages = [
     {
         title: "Katheryne",
         text: "Ad astra abyssosque!",
+    },
+    {
+        title: "Did you know?",
+        text: "This Loading Screen will change into light theme around 6 AM - 5 PM?",
+    },
+    {
+        title: "Did you know?",
+        text: "This Loading Screen will change into dark theme around 6 PM - 5 AM?",
+    },
+    {
+        title: "Developer Message",
+        text: "Inazuma and Fontaine are my favorite regions.",
+    },
+    {
+        title: "Developer Message",
+        text: "Monstadt has a nostalgic music.",
+    },
+    {
+        title: "I'm begging",
+        text: "Please give me a chance to pull for Raiden Shogun.",
+    },
+    {
+        title: "Jean",
+        text: "My mommy.",
+    },
+    {
+        title: "Did you know?",
+        text: "This message can change by clicking everywhere?",
+    },
+    {
+        title: "Columbina!",
+        text: "COLUMBINA!!",
     },
 ];

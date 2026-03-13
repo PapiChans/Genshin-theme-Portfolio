@@ -1,5 +1,8 @@
 # Changelog
 
+**v0.0.7 - March 13, 2026**
+- Finished Game Loader
+
 **v0.0.6 - March 11, 2026**
 - Add Dynamic Text to the Game Loader
 - Organized File and Folders

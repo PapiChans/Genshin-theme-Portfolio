@@ -1,0 +1,196 @@
+:root {
+    /* Loading Screen: Light Theme */
+    --loading-light-background-color: #fefeff;
+    --loading-light-color: #8699a7;
+    --loading-light-line-color: #e5e7eb;
+
+    /* Loading Screen: Dark Theme */
+    --loading-dark-background-color: #1d1c21;
+    --loading-dark-color: #dacea2;
+    --loading-dark-line-color: #3b3b3f;
+}
+
+* {
+    font-family: genshin;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Game Loader */
+.game-loader-background {
+    width: 100%;
+    height: 100vh;
+    display: block;
+    padding-top: 12rem;
+}
+
+.game-loader-background.light {
+    background-color: var(--loading-light-background-color);
+}
+
+.game-loader-background.dark {
+    background-color: var(--loading-dark-background-color);
+}
+
+.game-loader-icon-placement {
+    width: 100%;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-loader-icon {
+    height: 130px;
+}
+
+.game-loader-icon.light {
+    filter: brightness(0.5);
+}
+
+.game-loader-icon.dark {
+    filter: brightness(0) saturate(100%) invert(79%) sepia(21%) saturate(462%) hue-rotate(354deg) brightness(93%) contrast(90%);
+}
+
+.game-loader-text-placement {
+    width: 100%;
+    height: 100px;
+    max-height: 150px;
+    margin-top: 7rem;
+    padding: 1rem;
+}
+
+.game-loader-title {
+    font-size: clamp(1rem, 1.5vw, 2rem);
+    text-align: center;
+}
+
+.game-loader-title.light {
+    color: var(--loading-light-color);
+}
+
+.game-loader-title.dark {
+    color: var(--loading-dark-color);
+}
+
+.game-loader-text {
+    margin: 0.75rem auto 0;
+    text-align: center;
+    font-size: clamp(0.7rem, 1vw, 1rem);
+    max-width: 700px;
+    line-height: 1.2rem;
+}
+
+.game-loader-text.light {
+    color: var(--loading-light-color);
+}
+
+.game-loader-text.dark {
+    color: var(--loading-dark-color);
+}
+
+.game-loader-loading-placement {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-loader-loading-line {
+    width: 100%;
+    height: 2px;
+}
+
+.game-loader-loading-line.light {
+    background-color: var(--loading-light-line-color);
+}
+
+.game-loader-loading-line.dark {
+    background-color: var(--loading-dark-line-color);
+}
+
+.game-loader-loading-area {
+  width: 800px;
+  height: clamp(30px, 2.5vw, 80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader-icon-container {
+  position: relative;
+  height: 100%;
+  margin: 0 0.15rem;
+}
+
+.loader-icon {
+  height: 100%;
+  display: block;
+}
+
+.loader-icon-wipe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  overflow: hidden;
+  clip-path: inset(0 100% 0 0);
+  animation: iconWipe 0.7s ease forwards;
+}
+
+.loader-icon.base.light {
+  filter: brightness(0) saturate(100%) invert(92%) sepia(6%) saturate(92%)
+    hue-rotate(190deg) brightness(97%) contrast(93%);
+}
+
+.loader-icon.base.dark {
+  filter: brightness(0) saturate(100%) invert(16%) sepia(6%) saturate(200%)
+    hue-rotate(210deg) brightness(90%) contrast(90%);
+}
+
+.loader-icon.fill.dark {
+  filter: brightness(0) saturate(100%) invert(92%) sepia(3%) saturate(6%)
+    hue-rotate(199deg) brightness(103%) contrast(97%);
+}
+
+.loader-icon.fill.light {
+  filter: brightness(0) saturate(100%) invert(16%) sepia(6%) saturate(391%)
+    hue-rotate(208deg) brightness(95%) contrast(90%);
+}
+
+@keyframes iconWipe {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+/* Tablets portrait 768 x 1024 */
+@media (max-width: 768px) {
+    .game-loader-icon {
+        height: 100px;
+    }
+
+    .game-loader-text {
+        max-width: 500px;
+    }
+}
+
+/* Large phones 480 x 900 */
+@media (max-width: 480px) {
+    .game-loader-text {
+        max-width: 400px;
+    }
+}
+
+/* Small phones  360 x 740*/
+@media (max-width: 360px) {
+    .game-loader-text {
+        max-width: 200px;
+    }
+}
