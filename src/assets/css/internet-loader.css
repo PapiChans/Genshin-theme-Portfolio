@@ -7,8 +7,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    z-index: 999;
+    position: fixed;
+    z-index: 9999;
+    opacity: 1;
+    transition: opacity 1s ease;
 }
 
 .internet-loader-box {
@@ -19,6 +21,12 @@
     justify-content: center;
     align-items: center;
     border-radius: 20px;
+}
+
+/* Fade Out Effect */
+.internet-loader-background.fade-out {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .internet-loader-spinner {
@@ -44,24 +52,15 @@
 /* tablet */
 @media (max-width: 768px) {
     .internet-loader-box {
-        height: 150px;
-        width: 150px;
-        margin-bottom: 12rem;
+        margin-bottom: 5rem;
+        height: 90px;
+        width: 90px;
     }
-}
 
-/* large phone */
-@media (max-width: 480px) {
-    .internet-loader-box {
-        height: 150px;
-        width: 150px;
-    }
-}
-
-/* small phone */
-@media (max-width: 320px) {
-    .internet-loader-box {
-        height: 150px;
-        width: 150px;
+    .internet-loader-spinner {
+      width: 40%;
+      height: 40%;
+      border-top: 4px solid #FFF;
+      border-right: 4px solid transparent;
     }
 }

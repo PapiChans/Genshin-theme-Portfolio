@@ -7,8 +7,8 @@ import whiteHydro from '../../assets/images/elements/white/hydro_white.png'
 import whiteElectro from '../../assets/images/elements/white/electro_white.png'
 import whiteCryo from '../../assets/images/elements/white/cryo_white.png'
 
-import { useLoadingText } from '../../hooks/game-loader-change-text';
-import { getThemebyTime } from '../../hooks/get-theme-by-time';
+import { useLoadingText } from '../../hooks/game-loader/game-loader-change-text';
+import { getThemebyTime } from '../../hooks/game-loader/get-theme-by-time';
 
 const GameLoader = () => {
   const { title, text, changeLoadingText } = useLoadingText();

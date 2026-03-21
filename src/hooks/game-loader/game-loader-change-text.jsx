@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { loadingMessages } from "../utils/loading-messages";
+import { loadingMessages } from "../../utils/game-loader/loading-messages";
 
 export function useLoadingText() {
 

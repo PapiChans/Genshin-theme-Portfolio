@@ -172,6 +172,10 @@
 
 /* Tablets portrait 768 x 1024 */
 @media (max-width: 768px) {
+    .game-loader-background {
+        padding-top: 16rem;
+    }
+
     .game-loader-icon {
         height: 100px;
     }
@@ -183,6 +187,10 @@
 
 /* Large phones 480 x 900 */
 @media (max-width: 480px) {
+    .game-loader-background {
+        padding-top: 18rem;
+    }
+
     .game-loader-text {
         max-width: 400px;
     }
@@ -190,6 +198,11 @@
 
 /* Small phones  360 x 740*/
 @media (max-width: 360px) {
+    .game-loader-background {
+        padding-top: 12rem;
+    }
+
+
     .game-loader-text {
         max-width: 200px;
     }

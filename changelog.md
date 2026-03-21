@@ -1,5 +1,10 @@
 # Changelog
 
+**v0.0.8 - March 21, 2026**
+- Adjust Project Layout
+- Add More Assets
+- Add Plan MD Checklist
+
 **v0.0.7 - March 13, 2026**
 - Finished Game Loader
 
