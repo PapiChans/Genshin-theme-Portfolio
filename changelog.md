@@ -1,5 +1,10 @@
 # Changelog
 
+**v0.0.9 - March 31, 2026**
+- Add More Assets
+- Add Background for Homepage
+- Add Homepage Navbbar
+
 **v0.0.8 - March 21, 2026**
 - Adjust Project Layout
 - Add More Assets

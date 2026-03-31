@@ -14,9 +14,10 @@
 
 # Homepage Content
 
-- [] Genshin Theme
-- [] There a theme Select
-- [] Background Login
+- [ ] Genshin Theme
+- [ ] There a theme Select
+- [ ] Background Login
+- [ ] Navbar
 
 # Each Portfolio Content
 

@@ -10,6 +10,8 @@ import whiteCryo from '../../assets/images/elements/white/cryo_white.png'
 import { useLoadingText } from '../../hooks/game-loader/game-loader-change-text';
 import { getThemebyTime } from '../../hooks/game-loader/get-theme-by-time';
 
+//Regions
+
 const GameLoader = () => {
   const { title, text, changeLoadingText } = useLoadingText();
   const { theme } = getThemebyTime();

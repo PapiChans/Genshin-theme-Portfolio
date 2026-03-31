@@ -1,0 +1,117 @@
+:root {
+    --navbar-background: #485160; 
+    --navbar-icon-color: #D2BB8E;
+
+    --navbar-icon-bg-hover: #e5e3d7;
+    --navbar-icon-hover: #40415f;
+
+    --navbar-text-color: #E7E8EA;
+
+    --navbar-shadow: #505050;
+}
+
+.navbar-area {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    position: fixed;
+    z-index: 10;
+}
+
+.navbar {
+    width: 80%;
+    height: 50px;
+    background-color: var(--navbar-background);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    padding-left: 2em;
+    padding-right: 2em;
+    border-radius: 50px;
+    border: 2px solid var(--navbar-icon-color);
+    box-shadow: 1px 1px 10px var(--navbar-shadow);
+}
+
+.navbar-paimon {
+    height: 30px;
+    width: 30px;
+    padding: 2px;
+    box-sizing: content-box;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    background-color: var(--navbar-background);
+    border-radius: 50%;
+}
+
+.navbar-paimon:hover {
+    background-color: var(--navbar-icon-bg-hover);
+}
+
+.navbar-icon {
+    font-size: 20px;
+    cursor: pointer;
+    color: var(--navbar-icon-color);
+    padding: 4px;
+    box-sizing: content-box;
+    transition: all 0.2s ease-in-out;
+    background-color: var(--navbar-background);
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+}
+
+.navbar-icon:hover {
+    background-color: var(--navbar-icon-bg-hover);
+    color: var(--navbar-icon-hover);
+}
+
+.navbar-greetings {
+    color: var(--navbar-text-color);
+}
+
+.homepage-content {
+    width: 100%;
+    height: 100vh;
+
+    /* color blending */
+    background: linear-gradient(
+        rgba(136, 125, 236, 0.2),
+        rgba(255, 255, 255, 0.2)
+    ),
+    url('../images/backgrounds/teyvat.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: opacity(0.6);
+
+    display: block;
+}
+
+/* Tablets landscape / small laptops 1024 x 800 */
+@media (max-width: 1024px) {
+
+}
+
+/* Tablets portrait 768 x 1024 */
+@media (max-width: 768px) {
+    .navbar {
+        width: 95%;
+    }
+}
+
+/* Large phones 480 x 900 */
+@media (max-width: 480px) {
+    .navbar {
+        width: 90%;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}
+
+/* Small phones  360 x 740*/
+@media (max-width: 360px) {
+
+}
