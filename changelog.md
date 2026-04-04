@@ -1,5 +1,9 @@
 # Changelog
 
+**v0.0.10 - April 4, 2026**
+- Update the Description
+- Add Regions in Game Loader
+
 **v0.0.9 - March 31, 2026**
 - Add More Assets
 - Add Background for Homepage

@@ -9,12 +9,14 @@ import whiteCryo from '../../assets/images/elements/white/cryo_white.png'
 
 import { useLoadingText } from '../../hooks/game-loader/game-loader-change-text';
 import { getThemebyTime } from '../../hooks/game-loader/get-theme-by-time';
+import { regionChange } from '../../hooks/game-loader/region-change'
 
-//Regions
 
-const GameLoader = () => {
+const GameLoader = ({region}) => {
   const { title, text, changeLoadingText } = useLoadingText();
   const { theme } = getThemebyTime();
+
+  const setRegion = regionChange(region);
 
   const elements = [
     { src: whitePyro, name: "pyro" },
@@ -30,7 +32,7 @@ const GameLoader = () => {
     <>
     <div className={`game-loader-background ${theme}`} onClick={changeLoadingText}>
       <div className="game-loader-icon-placement">
-        <img className={`game-loader-icon ${theme}`} src={whiteAnemo} alt="Element Logo" />
+        <img className={`game-loader-icon ${theme}`} src={setRegion} alt="Element Logo" />
       </div>
       <div className="game-loader-text-placement">
         <p className={`game-loader-title ${theme}`}>{title}</p>
