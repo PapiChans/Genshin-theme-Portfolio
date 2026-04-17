@@ -5,9 +5,16 @@
     --navbar-icon-bg-hover: #e5e3d7;
     --navbar-icon-hover: #40415f;
 
-    --navbar-text-color: #E7E8EA;
+    --navbar-text-color: #e9ecec;
 
-    --navbar-shadow: #505050;
+    --navbar-shadow: #8a8a8a;
+
+    --homepage-background-content: rgba(72, 81, 96, 0.1);
+
+    --homepage-server-box-color: rgba(52, 50, 59, 0.8);
+    --server-box-color: #696054;
+
+    --diamond-bg: #E3DED7;
 }
 
 .navbar-area {
@@ -73,22 +80,129 @@
 }
 
 .homepage-content {
+    position: relative;
     width: 100%;
     height: 100vh;
+    overflow: hidden;
+    display: block;
+}
 
-    /* color blending */
-    background: linear-gradient(
-        rgba(136, 125, 236, 0.2),
-        rgba(255, 255, 255, 0.2)
-    ),
-    url('../images/backgrounds/teyvat.jpg');
+.homepage-content::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('../images/backgrounds/aether-hd.gif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    filter: opacity(0.6);
-
-    display: block;
+    filter: blur(5px) brightness(0.8);
+    z-index: -1;
 }
+
+.homepage-display {
+    height: 100%;
+    width: 100%;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 16rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--homepage-background-content);
+}
+
+.homepage-title {
+    font-size: clamp(40px, 3vw, 45px);
+    color: var(--navbar-text-color)
+}
+
+.homepage-line {
+    width: 25rem;
+    height: 2px;
+    background-color: var(--navbar-text-color);
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 50%;
+}
+
+.homepage-subtitle {
+    font-size: clamp(15px, 2vw, 15px);
+    color: var(--navbar-text-color)
+}
+
+.homepage-server-box {
+    margin-top: 10rem;
+    width: 275px;
+    height: 50px;
+    background-color: var(--homepage-server-box-color);
+    display: block;
+    border-radius: 1px;
+    position: relative;
+}
+
+.homepage-server-box-border {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    border: 1px solid var(--server-box-color);
+    border-radius: 1px;
+}
+
+.homepage-text-area {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.diamond-border {
+  width: 18px;
+  height: 18px;
+  background-color: var(--diamond-bg);
+  transform: rotate(45deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.diamond-border::after {
+  content: "";
+  position: absolute;
+  top: 2px;  
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  border: 1px solid var(--navbar-icon-hover);
+  transform: rotate(0deg);
+  background-color: transparent;
+}
+
+.diamond-check {
+    color: var(--navbar-icon-hover);
+    transform: rotate(-45deg);
+    font-size: 12px;
+}
+
+.homepage-region-text-area {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    color: var(--diamond-bg);
+}
+
+/* About Content */
+.about-content {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--navbar-icon-color);
+}
+
 
 /* Tablets landscape / small laptops 1024 x 800 */
 @media (max-width: 1024px) {
@@ -106,6 +220,11 @@
 @media (max-width: 480px) {
     .navbar {
         width: 90%;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .homepage-display { 
         padding-left: 1em;
         padding-right: 1em;
     }

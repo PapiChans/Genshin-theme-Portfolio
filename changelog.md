@@ -1,5 +1,10 @@
 # Changelog
 
+**v0.0.11 - April 17, 2026**
+- Add Smoothscrolling
+- Add Homepage Content
+- Adjust Application
+
 **v0.0.10 - April 4, 2026**
 - Update the Description
 - Add Regions in Game Loader
