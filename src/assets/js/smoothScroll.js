@@ -1,28 +1,17 @@
-// smoothScroll.js
-(function() {
-  let targetScroll = window.scrollY;
-  let currentScroll = window.scrollY;
-  let velocity = 0;
-  const ease = 0.07;   // smaller = slower catching up
-  const damping = 1; // closer to 1 = longer glide
+let targetScroll = window.pageYOffset;
+let currentScroll = window.pageYOffset;
 
-  function smoothScroll() {
-    const delta = targetScroll - currentScroll;
-    velocity = delta * ease;       // Move proportionally to the distance
-    currentScroll += velocity;     // Update
-    window.scrollTo(0, currentScroll);
-    
-    requestAnimationFrame(smoothScroll);
-  }
-
-  function onWheel(e) {
-    e.preventDefault();
+window.addEventListener("wheel", (e) => {
+    e.preventDefault(); // Prevents default jumpy scroll
     targetScroll += e.deltaY;
+    // Keep target within page bounds
     targetScroll = Math.max(0, Math.min(targetScroll, document.body.scrollHeight - window.innerHeight));
-  }
+}, { passive: false });
 
-  window.addEventListener("DOMContentLoaded", () => {
-    window.addEventListener("wheel", onWheel, { passive: false });
-    smoothScroll();
-  });
-})();
+function update() {
+    // Linear Interpolation (LERP) for smoothness
+    currentScroll += (targetScroll - currentScroll) * 0.1; 
+    window.scrollTo(0, currentScroll);
+    requestAnimationFrame(update);
+}
+update();

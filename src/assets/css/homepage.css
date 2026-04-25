@@ -114,21 +114,30 @@
 
 .homepage-title {
     font-size: clamp(40px, 3vw, 45px);
-    color: var(--navbar-text-color)
+    color: var(--navbar-text-color);
+    font-weight: normal;
 }
 
 .homepage-line {
     width: 25rem;
     height: 2px;
     background-color: var(--navbar-text-color);
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     margin-bottom: 1.5rem;
     border-radius: 50%;
 }
 
+@keyframes fadeInOut {
+    0% {opacity: 1;}
+    50% {opacity: 0.2;}
+    100% {opacity: 1;}
+}
+
 .homepage-subtitle {
     font-size: clamp(15px, 2vw, 15px);
-    color: var(--navbar-text-color)
+    color: var(--navbar-text-color);
+    font-weight: normal;
+    animation: fadeInOut 3s infinite;
 }
 
 .homepage-server-box {

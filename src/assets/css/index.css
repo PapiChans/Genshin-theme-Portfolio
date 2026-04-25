@@ -11,6 +11,10 @@
     text-decoration: none;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 /* Large desktops 1440 x 1024 */
 @media (max-width: 1440px) {
 

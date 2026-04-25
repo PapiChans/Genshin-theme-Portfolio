@@ -1,5 +1,9 @@
 # Changelog
 
+**v0.0.12 - April 26, 2026**
+- Improve smooth Scaling
+- Add Hompage Content
+
 **v0.0.11 - April 17, 2026**
 - Add Smoothscrolling
 - Add Homepage Content

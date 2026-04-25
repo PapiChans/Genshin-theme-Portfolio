@@ -14,17 +14,37 @@
 
 # Homepage Content
 
-- [ ] Genshin Theme
+- [x] Genshin Theme
 - [ ] There a theme Select
 - [ ] Background Login
 - [ ] Navbar
 
-# Each Portfolio Content
+# Pages
 
-- [ ] Color theme
-- [ ] Region Theme
-- [ ] There's optional Music day / Night
-- [ ] Profile that has banner, circle icon
-- [ ] Short Biography
-- [ ] Work Experiences
-- [ ] Character Reference
+- Archon Info
+- Region Info
+
+# Page Settings
+- Hyperlinks to regian and archon
+- Optional Region based Music
+
+# Region
+- Small Info
+- Photos (If possible)
+- Display Emblem
+
+# Archon
+- Avatar
+- Information
+- Vision
+- Weapon
+- Talents
+
+# Music
+## Monstadt
+- Genshin Impact Main Theme
+- A Day in Mondstadt
+- The City Favored by Wind
+- Bustling Afternoon in Mondstadt
+- Dusk in Mondstadt
+- Another Day in Mondstadt
