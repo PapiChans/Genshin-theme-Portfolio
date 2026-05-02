@@ -6,7 +6,7 @@
 | ------------------- | --------------------|
 | **Description**     | A Characters Porfolio with a UI theme that based on the game Genshin Impact. |
 | **Project Duration**    | March 4, 2026 - (In Progress) |
-| **Current Version** | v0.0.12 | 
+| **Current Version** | v0.0.13 | 
 
 
 ## Technologies Used for this Application

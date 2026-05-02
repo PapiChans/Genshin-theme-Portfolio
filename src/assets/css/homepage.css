@@ -6,6 +6,8 @@
     --navbar-icon-hover: #40415f;
 
     --navbar-text-color: #e9ecec;
+    --navbar-text-dark-color: #494949;
+
 
     --navbar-shadow: #8a8a8a;
 
@@ -15,6 +17,9 @@
     --server-box-color: #696054;
 
     --diamond-bg: #E3DED7;
+
+    /* Media Showcase */
+    --showcase-bg: #f7f2df;
 }
 
 .navbar-area {
@@ -205,11 +210,64 @@
     color: var(--diamond-bg);
 }
 
-/* About Content */
-.about-content {
-    height: 100vh;
+/* Media Showcase */
+.homepage-media-showcase {
+    height: 100%;
     width: 100%;
-    background-color: var(--navbar-icon-color);
+    background-color: var(--showcase-bg);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.showcase-title {
+    font-size: clamp(20px, 3vw, 25px);
+    color: var(--navbar-text-dark-color);
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.media-line-area {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.media-line {
+    width: 20rem;
+    height: 2px;
+    background-color: var(--navbar-text-dark-color);
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 50%;
+}
+
+.media-area {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.media-area-half {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    max-width: 100%;
+    min-width: 280px;
+    padding: 0.5rem;
+}
+
+.media-area-half iframe {
+    width: 100%;
+    max-width: 534px;
+    height: 300px;
 }
 
 
@@ -223,6 +281,14 @@
     .navbar {
         width: 95%;
     }
+
+    .media-area {
+        display: block;
+    }
+
+    .media-area-half {
+        width: 100%;
+     }
 }
 
 /* Large phones 480 x 900 */

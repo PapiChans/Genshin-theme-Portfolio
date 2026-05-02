@@ -1,8 +1,13 @@
 # Changelog
 
+**v0.0.13 - May 2, 2026**
+- Organized Components
+- Add Music
+- Add Homepage Content
+
 **v0.0.12 - April 26, 2026**
 - Improve smooth Scaling
-- Add Hompage Content
+- Add Homepage Content
 
 **v0.0.11 - April 17, 2026**
 - Add Smoothscrolling
