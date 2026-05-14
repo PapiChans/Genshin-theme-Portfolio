@@ -5,6 +5,7 @@ import InternetLoader from "../../components/loaders/internet-loader"
 import Navbar from "../../components/homepage/navbar"
 import HomepageTitle from "../../components/homepage/title"
 import Media_showcase from "../../components/homepage/media_showcase"
+import Regions from "../../components/homepage/regions"
 
 const HomepageIndex = () => {
   return (
@@ -12,6 +13,7 @@ const HomepageIndex = () => {
       <Navbar/>
       <HomepageTitle/>
       <Media_showcase/>
+      <Regions/>
     </>
   )
 }

@@ -1,5 +1,11 @@
 # Changelog
 
+**v0.0.14 - May 14, 2026**
+- Add Homepage Regions
+- Install Axios
+- Add Background assets
+- revise smoothscroll
+
 **v0.0.13 - May 2, 2026**
 - Organized Components
 - Add Music

@@ -1,17 +1,16 @@
-let targetScroll = window.pageYOffset;
-let currentScroll = window.pageYOffset;
+let current = 0;
+let target = 0;
+const ease = 0.1; // Lower = smoother/slower
 
-window.addEventListener("wheel", (e) => {
-    e.preventDefault(); // Prevents default jumpy scroll
-    targetScroll += e.deltaY;
-    // Keep target within page bounds
-    targetScroll = Math.max(0, Math.min(targetScroll, document.body.scrollHeight - window.innerHeight));
+window.addEventListener('wheel', (e) => {
+  e.preventDefault();
+  target += e.deltaY;
 }, { passive: false });
 
-function update() {
-    // Linear Interpolation (LERP) for smoothness
-    currentScroll += (targetScroll - currentScroll) * 0.1; 
-    window.scrollTo(0, currentScroll);
-    requestAnimationFrame(update);
+function smoothScroll() {
+  current += (target - current) * ease;
+  window.scrollTo(0, current);
+  requestAnimationFrame(smoothScroll);
 }
-update();
+
+smoothScroll();
