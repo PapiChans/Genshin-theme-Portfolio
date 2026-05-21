@@ -274,11 +274,9 @@
 
 /* Region Area */
 .region-area {
-    height: 100vh;
+    height: auto;
     width: 100%;
     background-color: var(--showcase-bg);
-    padding-top: 2rem;
-    padding-bottom: 2rem;
     display: block;
 }
 
@@ -290,7 +288,7 @@
     background-repeat: no-repeat;
     position: relative;
     overflow: hidden;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.25s ease-in-out;
     filter: brightness(0.50);
     border: 2px solid var(--diamond-bg);
     cursor: pointer;
@@ -312,6 +310,29 @@
     transform: scale(1.01);
 }
 
+.footer {
+    height: 40px;
+    width: 100%;
+    background-color: var(--navbar-background);
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    justify-content: center;
+    color: var(--navbar-text-color);
+}
+
+.footer a {
+    font-size: 15px;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+    color: var(--navbar-text-color);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: var(--navbar-icon-color)
+}
 
 /* Tablets landscape / small laptops 1024 x 800 */
 @media (max-width: 1024px) {

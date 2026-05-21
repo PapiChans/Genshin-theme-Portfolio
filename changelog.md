@@ -1,5 +1,8 @@
 # Changelog
 
+**v0.0.14.1 - May 21, 2026**
+- Add Footer
+
 **v0.0.14 - May 14, 2026**
 - Add Homepage Regions
 - Install Axios
