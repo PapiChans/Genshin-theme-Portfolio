@@ -82,6 +82,7 @@
 
 .navbar-greetings {
     color: var(--navbar-text-color);
+    text-shadow: 2px 2px 4px var(--navbar-shadow)
 }
 
 .homepage-content {
@@ -121,6 +122,7 @@
     font-size: clamp(40px, 3vw, 45px);
     color: var(--navbar-text-color);
     font-weight: normal;
+    text-shadow: 2px 4px 4px var(--navbar-shadow);
 }
 
 .homepage-line {
@@ -143,6 +145,7 @@
     color: var(--navbar-text-color);
     font-weight: normal;
     animation: fadeInOut 3s infinite;
+    text-shadow: 2px 4px 4px var(--navbar-shadow)
 }
 
 .homepage-server-box {
@@ -208,6 +211,7 @@
     display: flex;
     justify-content: center;
     color: var(--diamond-bg);
+    text-shadow: 2px 2px 4px var(--navbar-shadow)
 }
 
 /* Media Showcase */
@@ -302,6 +306,7 @@
     align-items: center;
     font-size: 40px;
     color: var(--navbar-text-color);
+    text-shadow: 2px 4px 4px var(--navbar-shadow)
 }
 
 .region-item:hover{
@@ -309,6 +314,8 @@
     border: 2px solid var(--navbar-icon-color);
     transform: scale(1.01);
 }
+
+/* Footer */
 
 .footer {
     height: 40px;
@@ -322,12 +329,27 @@
     color: var(--navbar-text-color);
 }
 
+.footer-col-start {
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    padding-left: 1rem;
+}
+
+.footer-col-end {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    padding-right: 1rem;
+}
+
 .footer a {
-    font-size: 15px;
+    font-size: 13px;
     transition: all 0.25s ease-in-out;
     cursor: pointer;
     color: var(--navbar-text-color);
     text-decoration: none;
+    text-shadow: 2px 4px 4px var(--navbar-icon-hover)
 }
 
 .footer a:hover {
@@ -352,6 +374,15 @@
     .media-area-half {
         width: 100%;
      }
+
+     /* Region */
+    .region-label-area {
+        font-size: 25px;
+    }
+
+    .element {
+        height: 80px;
+    }
 }
 
 /* Large phones 480 x 900 */

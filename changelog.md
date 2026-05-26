@@ -1,5 +1,9 @@
 # Changelog
 
+**v0.0.14.2 - May 26, 2026**
+- Completed Footer
+- Overall Improvements for Landing Page
+
 **v0.0.14.1 - May 21, 2026**
 - Add Footer
 
