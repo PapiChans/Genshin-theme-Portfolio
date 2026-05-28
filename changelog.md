@@ -1,5 +1,8 @@
 # Changelog
 
+**v0.0.14.3 - May 28, 2026**
+- Implemented Internet Loading on Homepage
+
 **v0.0.14.2 - May 26, 2026**
 - Completed Footer
 - Overall Improvements for Landing Page
